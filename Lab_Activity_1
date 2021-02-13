@@ -1,0 +1,19 @@
+name = input("Name: ")
+course = input("Course: ")
+prelimgrade = input("Prelim Grade: ")
+midtermgrade = input("Midterms Grade: ")
+finalsgrade = input("Finals Grade: ")
+
+semestralgrade = ((float(prelimgrade) + float(midtermgrade) + float(finalsgrade)) / 3)
+print("Hi {}, your semesters final grade in {} is: {:.2f} ".format(name, course, semestralgrade))
+
+happy = "\U0001F600"
+lol = "\U0001F606"
+sad = "\U0001F62D"
+
+if semestralgrade > 70.00:
+    print(happy)
+elif semestralgrade == 70.00:
+    print(lol)
+else:
+    print(sad)
